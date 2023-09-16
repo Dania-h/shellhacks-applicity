@@ -1,0 +1,56 @@
+@use "../../styles/partials/variables" as *;
+
+.sidebar {
+    background-color: $primary-dark;
+    color: #fff;
+    font-size: 1.125rem;
+    width: 16em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 12.5rem;
+        margin-bottom: 4rem;
+    }
+
+    &__ul {
+        list-style-type: none;
+        width: 100%;
+
+        &--li {
+            margin: .75rem 0;
+            padding: .75rem 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            transition: background-color 0.3s ease-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba($color: $light-blue, $alpha: 0.2);
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icon--margin {
+    margin-inline-end: 1rem;
+}
