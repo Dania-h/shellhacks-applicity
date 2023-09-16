@@ -10,10 +10,10 @@ function Navbar() {
                 <img className="navbar__logo" src={logo} alt="logo" />
             </Link>
             <input className="navbar__search" type="text" placeholder="Search Companies..." />
-            <a className="navbar__link" href="/#">
+            <Link className="navbar__link" to="/#">
                 <p className="navbar__link-text">Login</p>
                 <img className="navbar__link-icon" src={arrowUpright} alt="login arrow" />
-            </a>
+            </Link>
         </nav>
     )
 }

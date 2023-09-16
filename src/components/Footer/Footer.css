@@ -1,0 +1,14 @@
+.footer {
+  background-color: #171621;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 0.8rem;
+  color: #f2f2f2;
+}
+.footer__logo {
+  width: 10rem;
+}/*# sourceMappingURL=Footer.css.map */
