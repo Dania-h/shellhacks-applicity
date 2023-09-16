@@ -2,22 +2,35 @@
   padding: 7rem 3rem 4rem 3rem;
   background-color: #171621;
   color: #f2f2f2;
+  width: 100%;
+  position: relative;
 }
 .hero__heading {
   font-size: 5rem;
   font-weight: 500;
   width: 43rem;
+  opacity: 40%;
 }
 .hero__subheading {
   font-size: 3rem;
   font-weight: 200;
   padding: 1rem 0;
-  width: 70%;
+  width: 75%;
   margin-left: auto;
+  text-align: end;
 }
 .hero__button {
   background-color: #48c9e5;
   border: none;
   padding: 1rem 3rem;
   font-size: 1rem;
+}
+.hero__button:hover {
+  cursor: pointer;
+}
+.hero__diagonalTop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30rem;
 }/*# sourceMappingURL=Hero.css.map */
