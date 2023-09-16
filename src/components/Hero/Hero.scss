@@ -1,0 +1,28 @@
+@use "../../styles/partials/variables" as *;
+
+.hero {
+  padding: 7rem 3rem 4rem 3rem;
+  background-color: $primary-dark;
+  color: $primary-light;
+
+  &__heading {
+    font-size: 5rem;
+    font-weight: 500;
+    width: 43rem;
+  }
+
+  &__subheading {
+    font-size: 3rem;
+    font-weight: 200;
+    padding: 1rem 0;
+    width: 70%;
+    margin-left: auto;
+  }
+
+  &__button {
+    background-color: $light-blue;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+}

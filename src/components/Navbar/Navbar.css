@@ -22,10 +22,10 @@
   max-width: 30rem;
 }
 .navbar__search::-moz-placeholder {
-  color: white;
+  color: #f2f2f2;
 }
 .navbar__search::placeholder {
-  color: white;
+  color: #f2f2f2;
 }
 .navbar__link {
   display: flex;
@@ -40,6 +40,7 @@
   width: 0.75rem;
   height: 0.75rem;
   margin-left: 5px;
+  margin-top: 3px;
 }
 .navbar__link::before {
   content: "";
