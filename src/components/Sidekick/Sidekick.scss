@@ -1,0 +1,63 @@
+@use "../../styles/partials/variables" as *;
+
+.sidekick {
+  background-color: $seconday-light;
+  padding: 3rem;
+  position: relative;
+
+  &__diagonalBot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    font-weight: 300;
+    width: 35rem;
+  }
+
+  &__feature {
+    &s {
+      padding: 3rem 0;
+      width: 100%;
+      position: relative;
+    }
+
+    &1 {
+      margin-left: auto;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    &2 {
+      width: fit-content;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    &-info {
+      padding: 2rem;
+
+      &-heading {
+        font-size: 2rem;
+      }
+
+      &-paragraph {
+        font-size: 1rem;
+        width: 25rem;
+      }
+    }
+
+    &-image {
+      width: 15rem;
+      height: 15rem;
+      background-color: white;
+    }
+  }
+}

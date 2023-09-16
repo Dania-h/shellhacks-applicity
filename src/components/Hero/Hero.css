@@ -24,6 +24,14 @@
   border: none;
   padding: 1rem 3rem;
   font-size: 1rem;
+  font-weight: 600;
+}
+.hero__button--arrow {
+  fill: #171621;
+  color: #171621;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.5rem;
 }
 .hero__button:hover {
   cursor: pointer;

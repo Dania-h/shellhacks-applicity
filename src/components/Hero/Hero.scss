@@ -28,6 +28,15 @@
     border: none;
     padding: 1rem 3rem;
     font-size: 1rem;
+    font-weight: 600;
+
+    &--arrow {
+      fill: $primary-dark;
+      color: $primary-dark;
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-left: 0.5rem;
+    }
 
     &:hover {
       cursor: pointer;
