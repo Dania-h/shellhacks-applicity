@@ -1,6 +1,6 @@
 .navbar {
   background-color: #171621;
-  width: 88%;
+  width: 100%;
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -18,10 +18,38 @@
   border-radius: 8px;
   padding: 0 1rem;
   color: white;
+  width: 40%;
+  max-width: 30rem;
 }
 .navbar__search::-moz-placeholder {
   color: white;
 }
 .navbar__search::placeholder {
   color: white;
+}
+.navbar__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.navbar__link-text {
+  font-size: 1.25rem;
+}
+.navbar__link-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 5px;
+}
+.navbar__link::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 0;
+  height: 2px;
+  background-color: #48c9e5;
+  transition: width 0.3s ease;
+}
+.navbar__link:hover:before {
+  width: 66px;
 }/*# sourceMappingURL=Navbar.css.map */

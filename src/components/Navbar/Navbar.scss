@@ -1,6 +1,6 @@
 .navbar {
   background-color: #171621;
-  width: 88%;
+  width: 100%;
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -19,9 +19,42 @@
     border-radius: 8px;
     padding: 0 1rem;
     color: white;
+    width: 40%;
+    max-width: 30rem;
 
     &::placeholder {
       color: white;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+    &-text {
+      font-size: 1.25rem;
+    }
+
+    &-icon {
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-left: 5px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 15px;
+      width: 0;
+      height: 2px;
+      background-color: #48c9e5;
+      transition: width 0.3s ease;
+    }
+
+    &:hover:before {
+      width: 66px;
     }
   }
 }
