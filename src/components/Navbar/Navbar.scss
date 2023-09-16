@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #171621;
+  width: 88%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__search {
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 20%);
+    border: none;
+    border-radius: 8px;
+    padding: 0 1rem;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
