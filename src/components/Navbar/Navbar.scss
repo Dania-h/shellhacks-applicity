@@ -21,12 +21,12 @@
     border: none;
     border-radius: 8px;
     padding: 0 1rem;
-    color: white;
+    color: $primary-light;
     width: 40%;
     max-width: 30rem;
 
     &::placeholder {
-      color: $primary-light;
+      color: gray;
     }
   }
 
