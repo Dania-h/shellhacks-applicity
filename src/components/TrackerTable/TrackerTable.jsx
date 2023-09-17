@@ -1,4 +1,6 @@
 import "./TrackerTable.scss";
+import { useUser } from "@clerk/clerk-react";
+import { useState, useEffect } from "react"; // Import useState and useEffect
 
 const data = [
   {
@@ -25,7 +27,36 @@ const data = [
   },
 ];
 
+
 function TrackerTable() {
+  const { user } = useUser();
+  const user_email = user.emailAddresses[0].emailAddress;
+  const applicationsUrl = `http://localhost:3001/applications?user_email=${user_email}`;
+
+  // Define state to store the combined data
+  const [combinedData, setCombinedData] = useState([]);
+
+  useEffect(() => {
+    // Fetch the applications data and combine it with the existing data
+    fetch(applicationsUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json(); // Parse response JSON
+      })
+      .then((responseData) => {
+        // Combine the existing data with the fetched data
+        const newData = [...data, ...responseData];
+        setCombinedData(newData); // Update the state with the combined data
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, [applicationsUrl]); // Empty dependency array to fetch data once when the component mounts
+
+  console.log(combinedData)
+
   return (
     <section className="tracker-section">
       <h1>Job Tracker</h1>
@@ -40,22 +71,18 @@ function TrackerTable() {
           <h2>Date of Response</h2>
           <h2>Interview Request?</h2>
         </div>
-        {data.map((item) => {
+        {combinedData.map((item) => {
           return (
-            <div className="tracker-section__table--row">
+            <div className="tracker-section__table--row" key={item.id}>
               <p>{item.company_name}</p>
-              <p>{item.role}</p>
-              <p>{item.job_link}</p>
-              <p>{item.connection_name}</p>
-              <p>{item.date_applied}</p>
-              <p>{item.response ? "YES" : "NO"}</p>
-              <p>{item.date_response ? `${item.date_response}` : "---"}</p>
+              <p>{item.role_name ? item.role_name : "---"}</p> {/* Use the correct key */}
+              <p>{item.job_link ? item.job_link : "---"}</p>
+              <p>{item.connection_name ? item.connection_name : "---"}</p>
+              <p>{item.response_date}</p> {/* Use the correct key */}
+              <p>{item.interview ? "YES" : "NO"}</p>
+              <p>{item.date_response ? item.date_response : "---"}</p>
               <p>
-                {item.interview
-                  ? item.interview
-                  : item.interview === false
-                  ? "NO"
-                  : "---"}
+                {item.interview ? item.interview : item.interview === false ? "NO" : "---"}
               </p>
             </div>
           );
