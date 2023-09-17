@@ -6,8 +6,8 @@ import {
 } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Register from "./pages/Register";
 
 const publishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
@@ -26,8 +26,8 @@ function ClerkProviderWithRoutes() {
       <Routes>
         <Route path="/" element={<Homepage routing="path" path="/" />} />
         <Route
-          path="/login*"
-          element={<Login routing="path" path="/sign-up" />}
+          path="/register*"
+          element={<Register routing="path"/>}
         />
         <Route
           path="/dashboard"
