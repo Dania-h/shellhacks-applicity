@@ -20,28 +20,9 @@
         align-items: center;
     }
 
-    &__button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    &__p {
         font-size: 1rem;
         margin: 0 1rem;
-        position: relative;
-        padding: .5rem 0;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 40px;
-            width: 0;
-            height: 2px;
-            background-color: $light-blue;
-            transition: width 0.3s ease;
-          }
-      
-          &:hover:before {
-            width: 100%;
-        }
     }
 
     &__avatar-div {

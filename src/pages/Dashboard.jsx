@@ -4,7 +4,7 @@ import TrackerTable from "../components/TrackerTable/TrackerTable";
 
 function Dashboard() {
   return (
-    <article style={{ display: "flex" }}>
+    <article style={{ display: "flex", overflow: "auto" }}>
       <SideBar />
       <div>
         <DashboardNav />

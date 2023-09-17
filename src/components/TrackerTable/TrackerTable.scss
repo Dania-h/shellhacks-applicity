@@ -9,6 +9,7 @@
     }
 
     &__table {
+        max-width: 87%;
         border-radius: 10px;
         box-shadow: 0 0 10px 1px $seconday-light; 
         margin: 0 2rem;
@@ -18,14 +19,20 @@
 
         &--row {
             display: grid;
-            grid-template-columns:8em 10em minmax(auto, 8em) 8em repeat(4, 6em);
+            grid-template-columns:8em 10em minmax(auto, 8em) 8em repeat(5, 6em);
             column-gap: 2rem;
-            padding: 1rem 0;
+            align-items: center;
             border-bottom: solid 1px $seconday-light;
+            width: max-content;
+
+            &:hover {
+                background-color: rgba($color: $seconday-light, $alpha: 0.2);
+            }
 
             p {
                 word-wrap: break-word;
                 text-wrap: wrap;
+                padding: 1rem 0;
             }
         }
 
@@ -36,4 +43,19 @@
             text-wrap: wrap;
         }
     }
+}
+
+.red {
+    background-color: #FF8B8B;
+}
+
+.green {
+    background-color: #9EF3A7;
+}
+
+.colored-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
