@@ -1,8 +1,39 @@
 @use "../../styles/partials/variables" as *;
 
-.tracker-table {
+.tracker-section {
 
     & h1 {
         font-size: 3rem;
+        font-weight: 400;
+        margin: 1rem 5rem;
+    }
+
+    &__table {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px $seconday-light; 
+        margin: 0 2rem;
+        padding: 1rem;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        &--row {
+            display: grid;
+            grid-template-columns:8em 10em minmax(auto, 8em) 8em repeat(4, 6em);
+            column-gap: 2rem;
+            padding: 1rem 0;
+            border-bottom: solid 1px $seconday-light;
+
+            p {
+                word-wrap: break-word;
+                text-wrap: wrap;
+            }
+        }
+
+        & h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            word-wrap: break-word;
+            text-wrap: wrap;
+        }
     }
 }
