@@ -1,9 +1,9 @@
 import LoginForm from "../components/LoginForm/LoginForm";
 
-function Login() {
+function Login({SignIn}) {
     return (
         <section>
-            <LoginForm />
+            <LoginForm  SignIn = {SignIn}/>
         </section>
     );
 }
