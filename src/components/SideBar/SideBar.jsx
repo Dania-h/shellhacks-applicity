@@ -12,21 +12,21 @@ function SideBar() {
         <img className="sidebar__logo" src={logo} alt="Applicity"></img>
         <ul className="sidebar__ul">
           <li className="sidebar__ul--li">
-            <TableIcon className="icon--margin" />
+            <TableIcon className="icon" />
             Tracker
           </li>
           <li className="sidebar__ul--li">
-            <StarIcon className="icon--margin" />
+            <StarIcon className="icon" />
             Reviews
           </li>
           <li className="sidebar__ul--li">
-            <UserIcon className="icon--margin" />
+            <UserIcon className="icon" />
             Profile
           </li>
         </ul>
       </nav>
-      <div className="sidebar__bottom">
-        <GearIcon className="icon--margin" />
+      <div className="sidebar__bottom sidebar__bottom--settings">
+        <GearIcon className="icon" />
         <p>Settings</p>
       </div>
     </section>
