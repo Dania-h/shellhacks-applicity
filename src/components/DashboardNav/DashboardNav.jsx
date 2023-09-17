@@ -10,8 +10,9 @@ function DashboardNav() {
         placeholder="Search Companies..."
       />
       <div className="dashboard-header__right-div">
-        <p className="dashboard-header__p">User Name</p>
-        <div className="dashboard-header__avatar-div"></div>
+        <p className="dashboard-header__p">Account</p>
+        <UserButton />
+        {/* <div className="dashboard-header__avatar-div"></div> */}
       </div>
     </header>
   );
