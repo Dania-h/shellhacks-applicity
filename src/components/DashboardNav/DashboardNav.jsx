@@ -1,6 +1,7 @@
 import "./DashboardNav.scss";
 import arrowUpright from "../../assets/icons/arrow-upright-primarydark.png";
 import { Link } from "react-router-dom";
+import { UserButton } from "@clerk/clerk-react";
 
 function DashboardNav() {
   return (
@@ -21,7 +22,8 @@ function DashboardNav() {
             />
           </button>
         </Link>
-        <div className="dashboard-header__avatar-div"></div>
+        <UserButton />
+        {/* <div className="dashboard-header__avatar-div"></div> */}
       </div>
     </header>
   );
