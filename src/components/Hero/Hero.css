@@ -35,6 +35,8 @@
 }
 .hero__button:hover {
   cursor: pointer;
+  background-color: aquamarine;
+  scale: 1.05;
 }
 .hero__diagonalTop {
   position: absolute;
