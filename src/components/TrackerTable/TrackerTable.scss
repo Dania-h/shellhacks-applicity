@@ -17,6 +17,19 @@
         overflow-y: hidden;
         white-space: nowrap;
 
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $seconday-light;
+            border-radius: 10px;
+        }
+
         &--row {
             display: grid;
             grid-template-columns:8em 10em minmax(auto, 8em) 8em repeat(5, 6em);
