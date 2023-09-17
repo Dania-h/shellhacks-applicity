@@ -24,6 +24,7 @@ function ClerkProviderWithRoutes() {
     <ClerkProvider
       publishableKey={publishableKey}
       navigate={(to) => navigate(to)}
+      afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'
     >
       <Routes>
         <Route path="/" element={<Homepage routing="path" path="/" />} />
