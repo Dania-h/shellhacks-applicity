@@ -2,21 +2,29 @@ import "../Sidekick/Sidekick.scss";
 import diagonalBot from "../../assets/images/diagonal-bot.png";
 import keepTrack from "../../assets/images/keep-track.png";
 import standards from "../../assets/images/standards.png";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 
 function Sidekick() {
+
+    Aos.init({
+        duration: 800
+    });
+
     return (
         <section className="sidekick">
-            <img className="sidekick__diagonalBot" src={diagonalBot} alt="bg design accent" />
+            {/* <img className="sidekick__diagonalBot" src={diagonalBot} alt="bg design accent" /> */}
             <h2 className="sidekick__heading">WHAT CAN WE DO FOR YOU?</h2>
             <div className="sidekick__features">
-                <div className="sidekick__feature">
+                <div className="sidekick__feature" data-aos="fade-right" >
                     <div className="sidekick__feature-info">
                         <h5 className="sidekick__feature-info-heading">Keep Track</h5>
                         <p className="sidekick__feature-info-paragraph">We provide you with advanced tools to help you effectively organize and manage your job applications. This enables you to maintain a well-structured overview effortlessly, giving you the freedom to focus on what truly matters in your career journey.</p>
                     </div>
                     <img className="sidekick__feature-image" src={keepTrack} alt="organizing jobs" />
                 </div>
-                <div className="sidekick__feature">
+                <div className="sidekick__feature" data-aos="fade-left" >
                     <img className="sidekick__feature-image" src={standards} alt="rating companies" />
                     <div className="sidekick__feature-info">
                         <h5 className="sidekick__feature-info-heading">Raise the Standards</h5>

@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables" as *;
+
+.about {
+  background-color: $seconday-light;
+  padding: 3rem 8rem;
+  position: relative;
+
+  &__diagonalBot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    font-weight: 300;
+    width: 35rem;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-size: 2rem;
+  }
+}
