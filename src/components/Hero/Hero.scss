@@ -1,10 +1,9 @@
 @use "../../styles/partials/variables" as *;
 
 .hero {
-  padding: 7rem 3rem 4rem 3rem;
+  padding: 7rem 6rem 4rem 6rem;
   background-color: $primary-dark;
   color: $primary-light;
-  width: 100%;
   position: relative;
 
   &__heading {
@@ -29,6 +28,7 @@
     padding: 1rem 3rem;
     font-size: 1rem;
     font-weight: 300;
+    transition: background-color 0.3s, transform 0.3s;
 
     &--arrow {
       fill: $primary-dark;
@@ -40,8 +40,8 @@
 
     &:hover {
       cursor: pointer;
-      background-color: aquamarine;
-      scale: 1.05;
+      background-color: aqua;
+      transform: scale(1.05);
     }
   }
 

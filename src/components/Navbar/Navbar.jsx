@@ -5,16 +5,19 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="navbar">
-            <Link to={"/"}>
-                <img className="navbar__logo" src={logo} alt="logo" />
-            </Link>
-            <input className="navbar__search" type="text" placeholder="Search Companies..." />
-            <Link className="navbar__link" to="/#">
-                <p className="navbar__link-text">Login</p>
-                <img className="navbar__link-icon" src={arrowUpright} alt="login arrow" />
-            </Link>
-        </nav>
+        <header>
+            <nav className="navbar">
+                <Link to={"/"}>
+                    <img className="navbar__logo" src={logo} alt="logo" />
+                </Link>
+                <input className="navbar__search" type="text" placeholder="Search Companies..." />
+                <Link className="navbar__link" to="/login">
+                    <p className="navbar__link-text">Login</p>
+                    <img className="navbar__link-icon" src={arrowUpright} alt="login arrow" />
+                </Link>
+            </nav>
+        </header>
+
     )
 }
 

@@ -2,14 +2,13 @@
 
 .navbar {
   background-color: $primary-dark;
-  width: 100%;
   padding: 1rem 3rem;
+  width: fill;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+  z-index: 1;
 
   &__logo {
     width: 150px;
@@ -51,7 +50,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: 15px;
+      bottom: 25px;
       width: 0;
       height: 2px;
       background-color: $light-blue;

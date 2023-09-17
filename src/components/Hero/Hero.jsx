@@ -9,7 +9,6 @@ function Hero() {
             <h4 className="hero__subheading">One stop for tracking your applications and finding the best company for you.</h4>
             <button className="hero__button">GET STARTED
                 <img className="hero__button--arrow" src={arrowUpright} alt="arrow icon" />
-
             </button>
             <img className="hero__diagonalTop" src={diagonalTop} alt="background design accent" />
         </section>
