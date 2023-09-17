@@ -17,11 +17,11 @@ function Sidekick() {
                     <img className="sidekick__feature-image" src={keepTrack} alt="organizing jobs" />
                 </div>
                 <div className="sidekick__feature2">
+                    <img className="sidekick__feature-image" src={standards} alt="rating companies" />
                     <div className="sidekick__feature-info">
                         <h5 className="sidekick__feature-info-heading">Raise the Standards</h5>
                         <p className="sidekick__feature-info-paragraph">We collect comprehensive company data, enabling you to easily identify top-rated organizations known for their ethical and fair hiring practices. Additionally, we champion accountability by highlighting companies with less favorable practices, ensuring you make informed decisions in your job search.</p>
                     </div>
-                    <img className="sidekick__feature-image" src={standards} alt="rating companies" />
                 </div>
             </div>
         </section>
