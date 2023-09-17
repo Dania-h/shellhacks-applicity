@@ -3,11 +3,13 @@ import {
   SignedIn,
   SignedOut,
   RedirectToSignIn,
+  SignIn,
 } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 const publishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
@@ -41,6 +43,12 @@ function ClerkProviderWithRoutes() {
               </SignedOut>
             </>
           }
+        />
+        <Route
+          path='/login'
+          element={<Login
+              SignIn = {SignIn}
+          />}
         />
       </Routes>
     </ClerkProvider>
