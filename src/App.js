@@ -29,7 +29,7 @@ function ClerkProviderWithRoutes() {
       <Routes>
         <Route path="/" element={<Homepage routing="path" path="/" />} />
         <Route
-          path="/register*"
+          path="/register/*"
           element={<Register routing="path"/>}
         />
         <Route

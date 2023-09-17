@@ -1,6 +1,7 @@
 import "./TrackerTable.scss";
 import { useUser } from "@clerk/clerk-react";
 import { useState, useEffect } from "react"; // Import useState and useEffect
+import add from '../../assets/icons/carbon_add.svg';
 
 const data = [
   {
@@ -109,6 +110,9 @@ function TrackerTable() {
             </div>
           );
         })}
+        <button className="tracker-section__table__button">Add
+          <img src={add} alt='Add more' />
+        </button>
       </div>
     </section>
   );
