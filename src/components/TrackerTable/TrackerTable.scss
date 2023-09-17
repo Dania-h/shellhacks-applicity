@@ -1,0 +1,8 @@
+@use "../../styles/partials/variables" as *;
+
+.tracker-table {
+
+    & h1 {
+        font-size: 3rem;
+    }
+}

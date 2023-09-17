@@ -1,0 +1,53 @@
+@use "../../styles/partials/variables" as *;
+
+.dashboard-header {
+    height: 6.5em;
+    width: 78em;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__search {
+        background-color: $seconday-light;
+        border-radius: 10px;
+        border: none;
+        width: 65%;
+        padding: 0 1rem;
+    }
+
+    &__right-div {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        margin: 0 1rem;
+        position: relative;
+        padding: .5rem 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            width: 0;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 0.3s ease;
+          }
+      
+          &:hover:before {
+            width: 100%;
+        }
+    }
+
+    &__avatar-div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $seconday-light;
+    }
+}
