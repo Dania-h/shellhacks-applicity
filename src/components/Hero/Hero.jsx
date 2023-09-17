@@ -15,8 +15,8 @@ function Hero() {
         <section className="hero">
             <h1 className="hero__heading" data-aos="fade-right">WELCOME TO YOUR NEXT JOB</h1>
             <h4 className="hero__subheading" data-aos="fade-left" data-aos-delay="200">One stop for tracking your applications and finding the best company for you.</h4>
-            <Link to={"/dashboard"}>
-                <button className="hero__button" data-aos="fade-up">GET STARTED
+            <Link to={"/register"}>
+                <button className="hero__button">GET STARTED
                     <img className="hero__button--arrow" src={arrowUpright} alt="arrow icon" />
                 </button>
             </Link>

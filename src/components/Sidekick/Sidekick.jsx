@@ -3,7 +3,7 @@ import diagonalBot from "../../assets/images/diagonal-bot.png";
 import keepTrack from "../../assets/images/keep-track.png";
 import standards from "../../assets/images/standards.png";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 
 function Sidekick() {
@@ -15,7 +15,7 @@ function Sidekick() {
     return (
         <section className="sidekick">
             {/* <img className="sidekick__diagonalBot" src={diagonalBot} alt="bg design accent" /> */}
-            <h2 className="sidekick__heading">WHAT CAN WE DO FOR YOU?</h2>
+            <h2 className="sidekick__heading" data-aos="fade-up">WHAT CAN WE DO FOR YOU?</h2>
             <div className="sidekick__features">
                 <div className="sidekick__feature" data-aos="fade-right" >
                     <div className="sidekick__feature-info">
