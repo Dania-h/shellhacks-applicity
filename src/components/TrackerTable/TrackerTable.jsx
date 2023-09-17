@@ -81,12 +81,6 @@ function TrackerTable() {
               <p>{item.role_name ? item.role_name : "---"}</p> {/* Use the correct key */}
               <p>{item.job_link ? item.job_link : "---"}</p>
               <p>{item.connection_name ? item.connection_name : "---"}</p>
-              <p>{item.response_date}</p> {/* Use the correct key */}
-              <p>{item.interview ? "YES" : "NO"}</p>
-              <p>{item.date_response ? item.date_response : "---"}</p>
-              <p>
-                {item.interview ? item.interview : item.interview === false ? "NO" : "---"}
-              </p>
               <div className={`colored-box ${item.connection_contact ? "green" : "red"}`}>
                 <p>{item.connection_contact ? "YES" : "NO"}</p>
               </div>
@@ -94,7 +88,7 @@ function TrackerTable() {
               <div className={`colored-box ${item.response ? "green" : "red"}`}>
                 <p>{item.response ? "YES" : "NO"}</p>
               </div>
-              <p>{item.date_response ? `${item.date_response}` : "---"}</p>
+              <p>{item.date_response ? item.date_response : "---"}</p>
               <div
                 className={`colored-box ${
                   item.interview

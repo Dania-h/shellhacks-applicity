@@ -10,11 +10,12 @@
 
     &__table {
         max-width: 85%;
+        max-height: 87vh;
         border-radius: 10px;
         box-shadow: 0 0 10px 1px $seconday-light; 
         margin: 0 2rem;
         padding: 1rem;
-        overflow-y: hidden;
+        overflow: scroll;
         white-space: nowrap;
 
         &::-webkit-scrollbar {
