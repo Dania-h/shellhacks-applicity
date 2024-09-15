@@ -1,0 +1,93 @@
+@use "../../styles/partials/variables" as *;
+
+.tracker-section {
+
+    & h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 1rem 5rem;
+    }
+
+    &__table {
+        max-width: 85%;
+        max-height: 87vh;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px $seconday-light; 
+        margin: 0 2rem;
+        padding: 1rem;
+        overflow: scroll;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $seconday-light;
+            border-radius: 10px;
+        }
+
+        &--row {
+            display: grid;
+            grid-template-columns:8em 10em minmax(auto, 8em) 8em repeat(5, 6em);
+            column-gap: 2rem;
+            align-items: center;
+            border-bottom: solid 1px $seconday-light;
+            width: max-content;
+
+            &:hover {
+                background-color: rgba($color: $seconday-light, $alpha: 0.2);
+            }
+
+            p {
+                word-wrap: break-word;
+                text-wrap: wrap;
+                padding: 1rem 0;
+            }
+        }
+
+        & h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            word-wrap: break-word;
+            text-wrap: wrap;
+        }
+
+        &__button {
+            border: none;
+            background-color: $light-blue;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            padding: 0.5rem 0;
+            margin: 1rem;
+            width: 15em;
+            cursor: pointer;
+
+            &:hover {
+                background-color: aqua;
+            }
+        }
+    }
+}
+
+.red {
+    background-color: #FF8B8B;
+}
+
+.green {
+    background-color: #9EF3A7;
+}
+
+.colored-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

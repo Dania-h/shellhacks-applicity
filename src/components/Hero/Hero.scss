@@ -1,22 +1,25 @@
 @use "../../styles/partials/variables" as *;
 
 .hero {
-  padding: 7rem 3rem 4rem 3rem;
+  padding: 7rem 6rem 4rem 6rem;
   background-color: $primary-dark;
   color: $primary-light;
+  position: relative;
 
   &__heading {
     font-size: 5rem;
     font-weight: 500;
     width: 43rem;
+    color: gray;
   }
 
   &__subheading {
     font-size: 3rem;
     font-weight: 200;
     padding: 1rem 0;
-    width: 70%;
+    width: 75%;
     margin-left: auto;
+    text-align: end;
   }
 
   &__button {
@@ -24,5 +27,28 @@
     border: none;
     padding: 1rem 3rem;
     font-size: 1rem;
+    font-weight: 300;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &--arrow {
+      fill: $primary-dark;
+      color: $primary-dark;
+      width: 0.75rem;
+      height: 0.75rem;
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: aqua;
+      transform: scale(1.05);
+    }
+  }
+
+  &__diagonalTop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30rem;
   }
 }

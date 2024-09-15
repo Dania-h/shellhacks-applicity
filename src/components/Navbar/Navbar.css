@@ -1,12 +1,12 @@
 .navbar {
   background-color: #171621;
-  width: 100%;
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 .navbar__logo {
   width: 150px;
@@ -17,21 +17,22 @@
   border: none;
   border-radius: 8px;
   padding: 0 1rem;
-  color: white;
+  color: #f2f2f2;
   width: 40%;
   max-width: 30rem;
 }
 .navbar__search::-moz-placeholder {
-  color: #f2f2f2;
+  color: gray;
 }
 .navbar__search::placeholder {
-  color: #f2f2f2;
+  color: gray;
 }
 .navbar__link {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
+  margin-left: 5rem;
 }
 .navbar__link-text {
   font-size: 1.25rem;
